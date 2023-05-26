@@ -39,11 +39,12 @@ Run mysql_secure_installation:
 
  Download the install script:
 
-    wget 
+    wget https://github.com/shanesipe/installmagento2
+    cd installmagento2
 
 Run the install script:
-    sudo chmod 777 magento2-install.sh
+    sudo chmod 777 install.sh
     
-    ./magento2-install.sh
+    ./install.sh
 
 Follow the prompts to complete the Magento 2 installation.
