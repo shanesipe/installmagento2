@@ -9,40 +9,41 @@ Prerequisites
 
 Installation
 
-    Connect to your server via SSH:
+Connect to your server via SSH:
 
-ssh username@server_ip
+    ssh username@server_ip
 
-    Create an unprivileged user to run Magento:
+Create an unprivileged user to run Magento:
 
-useradd -m magento
+    useradd -m magento
 
-    Install dependencies:
+Install dependencies:
 
-sudo apt install unzip php7.4 php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-intl php7.4-mbstring php7.4-soap php7.4-xml php7.4-zip
+    sudo apt install unzip php7.4 php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-intl php7.4-mbstring php7.4-soap php7.4-xml php7.4-zip
 
-    Install Apache and enable PHP FPM:
+Install Apache and enable PHP FPM:
 
-sudo apt install apache2  
-sudo a2enmod rewrite  
-sudo a2enmod php7.4
+    sudo apt install apache2  
+    sudo a2enmod rewrite  
+    sudo a2enmod php7.4
 
-    Install MariaDB:
+Install MariaDB:
 
-sudo apt install mariadb-server
+    sudo apt install mariadb-server
 
-    Run mysql_secure_installation:
+Run mysql_secure_installation:
 
-sudo mysql_secure_installation
+    sudo mysql_secure_installation
 
-    Enter your database name, user, and password when prompted.
+ Enter your database name, user, and password when prompted.
 
-    Download the install script:
+ Download the install script:
 
-wget https://raw.githubusercontent.com/yourusername/yourrepo/master/magento2-install.sh
+    wget 
 
-    Run the install script:
+Run the install script:
+    sudo chmod 777 magento2-install.sh
+    
+    ./magento2-install.sh
 
-bash magento2-install.sh
-
-    Follow the prompts to complete the Magento 2 installation.
+Follow the prompts to complete the Magento 2 installation.
